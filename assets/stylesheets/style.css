@@ -1,0 +1,130 @@
+
+body {
+    background-color: #eceef1;
+    color: #514c4c;
+    font-size: 14px;
+}
+
+.right{
+    float: right;
+}
+
+#login{
+    height: 40px;
+    margin: 10px 25px 0px 0px;
+}
+
+#login-button{
+    width: 120px;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+#intuit-logo{
+    background: url(../images/intuit-logos.png) no-repeat;
+    display: block;
+    height: 35px;
+    width: 115px;
+    margin: 50px auto 10px auto;
+}
+
+#product-logos{
+    background: url(../images/logos.png) no-repeat;
+    display: block;
+    margin: 15px auto 10px auto;
+    height: 35px;
+    width: 315px; 
+}
+
+#form {
+    width: 375px;
+    background-color: #ffffff;
+    border: 1px solid #C1C5C8;
+    border-bottom: none;
+    border-radius: 3px;
+    margin: 25px auto 0 auto;
+    padding: 30px; 
+    font-family: AvenirNext,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.captcha{
+    display: block;
+    background-color: #eceef1;
+    width: 375px;
+    margin: 0 auto 0 auto;
+    padding: 10px; 
+    border: 1px solid #C1C5C8;
+    border-top: none;
+    text-align: center;
+}
+
+.heading{
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.normal-text{
+    display: block;
+    color: #514c4c;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.normal-text a, .captcha a, #login a{
+    text-decoration: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.tiny-text{
+    font-size: 10px;
+}
+
+label {
+    margin-top: 20px; 
+    display: block;
+}
+
+input{
+    width: 100%;
+    height: 35px; 
+    margin-top: 20px; 
+    border: 1px solid #C1C5C8;
+    border-radius: 3px;
+}
+
+button {
+    background-color:#0077c5;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    height: 40px;
+    border-radius: 3px;
+    width: 100%;
+
+}
+
+.margin{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.top-margin{
+    margin-top: 6px;
+}
+
+li{
+    display: inline;
+    margin-right: 5px;
+}
+
+footer{
+    text-align: center;
+}
+
