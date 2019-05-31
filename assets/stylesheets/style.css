@@ -1,32 +1,291 @@
+
+strong {
+    font-weight: 600;
+    
+}
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 20px;  
-    border-bottom: 1px solid #e2e2e2
+    grid-area: nav;
 }
 
-.nav-text{
-    font-family: nyt-franklin, helvetica, arial, sans-serif;
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(160, 156, 156);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+footer a{
+    display: block;
+    margin-left: 10px;
+    font-size: 11px;
+    color: rgb(160, 156, 156)
+}
+
+.more-in{
+    grid-area: more; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; 
+    padding-top: 20px;
+}
+
+.more-in p{
+    grid-column: 1 / -1;
+    margin: 0;
+    border-top: 1px solid grey;
+    padding: 5px 0;
+}
+
+.popular{
+    grid-area: popular;
+    border-top: 1px solid black;
+    margin: 20px 0 0 10px;
+}
+
+.popular a{
+    display: block;
+    font-size:larger;
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid grey;
+}
+.top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    border-bottom: 1px solid rgb(209, 198, 198); 
 }
 
 .nav a{
     text-decoration: none;
-    font-weight: 600;
-    color: black;
-    padding-right: 20px;
+    color:black;
 }
 
-.buttons a{
-    background-color: #6288a5;
-    padding: 10px;
-    color: white;
-    border-radius: 3px;
+.bottom-nav{
+    grid-area: bnav;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border-top: 3px solid rgb(233, 219, 219);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.bottom-nav img{
+    height: 25px;
+    width: auto;
+    grid-column: 1 / -1;
+}
+
+.nav-col a{
+    display: block;
     text-decoration: none;
-    font-family: helvetica,arial,sans-serif;
-    font-size: 11px;
+    color: black;
+    margin-top: 5px;
+}
+
+.nav-col:last-child a:nth-child(7){
+    padding-bottom: 10px;
+}
+
+.nav-col:last-child a:nth-child(8){
+    border-top: 1px solid grey;
+    padding-top: 10px;
+}
+
+.nav-col a:first-child, .margin-bold{
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.nav-col:last-child{
+    border-left: 1px solid grey;
+    padding-left: 15px;
+}
+
+
+article{
+    margin-top: 75px;
+    grid-area: main;
+}
+
+.story-title{
+    margin-top: 75px;
+    grid-area: title;
+    font-size: 24px;
     font-weight: 700;
 }
 
-header >* {
+.main-image{
+    grid-area: image;
+}
 
+aside{
+    grid-area: aside;
+    margin-top: 150px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+    flex: 1 1 100%;
+    margin-left: 10px;
+}
+
+.side-nav{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.side-nav p:first-child {
+    margin-bottom: 0;
+}
+
+.side-nav a.button{
+    width: 60%;
+    text-align: center;
+    margin-left: 10px;
+}
+aside div img{
+    flex: 1 1 25%;
+    max-width: 25%;
+    display: block;
+    margin: 5px;
+}
+
+aside p{
+flex: 1 1 100%;
+display: inline-block;
+}
+
+aside hr{
+flex: 1 1 100%;
+color: grey;
+}
+
+div.image-container{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+cite{
+    display: block;
+    font-size: 10px;
+    text-align: end; 
+}
+
+p {
+    margin: 20px 10px;
+    font-size: 18px;
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+.widgets{
+    display: flex;
+    justify-content: space-around;
+}
+
+.widgets i{
+    padding: 8px;
+    margin: 0 7px;
+    color: black;
+}
+
+.circle {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav   nav   nav     nav"
+    "... ...   title ...     ..."
+    "... image image image   ."
+    ".   .     main  aside   ."
+    ".   more  more  popular ."
+    ".   bnav bnav bnav   ."
+    ".   footer footer footer . ";
+    
+}
+
+aside img{
+    width: 25%;
+}
+
+.subscribe *{
+    text-align: center;
+}
+
+.subscribe p{
+    margin: 0;
+
+}
+
+ hr{
+    display: block;
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: gray;
+}
+
+.subscribe a{
+    text-decoration: none;
+}
+
+.inflation-image img{
+   
+    width: 550px;
+    height: 500px;
+}
+
+.chart{
+    position: relative;
+}
+
+.nested-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    top: 17%;
+    row-gap: 100px;
+}
+
+.nested-grid p{
+    margin: 5px 15px 0 0;
+    font-size:11px;
+}
+
+.left{
+    text-align: left;
+    margin-left:0;
+    margin-right:0;
+}
+
+a.button{
+    display: inline-block;
+    padding: 5px 10px;
+    color: white;
+    background-color:#6288a5;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
 }
